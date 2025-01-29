@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografia com CryptoJS</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Criptografia com CryptoJS</h2>
+        <form id="cryptoForm">
+            <label for="message">Texto a ser criptografado:</label><br>
+            <textarea id="message" rows="4" cols="50"></textarea><br>
+            <button type="button" onclick="encryptMessage()">Criptografar</button><br><br>
+            <label for="encrypted">Texto Criptografado:</label><br>
+            <textarea id="encrypted" rows="4" cols="50" readonly></textarea><br>
+            <button type="button" onclick="decryptMessage()">Descriptografar</button><br><br>
+            <label for="decrypted">Texto Descriptografado:</label><br>
+            <textarea id="decrypted" rows="4" cols="50" readonly></textarea>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
